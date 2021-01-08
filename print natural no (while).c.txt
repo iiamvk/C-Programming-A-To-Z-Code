@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i=1,no;
+	clrscr();
+	printf("enter no. to print natural no from 1 to");
+	scanf("%d",&no);
+	
+	while (i<no) 
+	{
+		
+		printf("%d \n",--i);
+	}
+}

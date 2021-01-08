@@ -1,0 +1,47 @@
+/*
+ShutDown Computer
+C Program to shutdown your computer: This program turn off i.e shutdown your computer system. Firstly it will asks you to shutdown your computer if you press 'y' then your computer will shutdown in 30 seconds, system function of "stdlib.h" is used to run an executable file shutdown.exe which is present in C:\WINDOWS\system32 in Windows XP. You can use various options while executing shutdown.exe, you can use -t option to specify number of seconds after which shutdown occurs.
+Syntax: shutdown -s -t x; here x is the number of seconds after which shutdown will occur.
+
+By default shutdown occur after 30 seconds. To shutdown immediately you can write "shutdown -s -t 0". If you wish to restart your computer then you can write "shutdown -r".
+
+If you are using Turbo C Compiler then execute your program from command prompt or by opening the executable file from the folder. Press F9 to build your executable file from source program. When you run program from within the compiler by pressing Ctrl+F9 it may not work.
+C programming code for Windows XP
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+char ch;
+
+printf("Do you want to shutdown your computer now (y/n)\n");
+scanf("%c", &ch);
+
+if (ch == 'y' || ch == 'Y')
+system("C:\\WINDOWS\\System32\\shutdown -s");
+
+return 0;
+}
+C programming code for Windows 7
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+system("C:\\WINDOWS\\System32\\shutdown /s");
+
+return 0;
+}
+To shutdown immediately use "C:\\WINDOWS\\System32\\ shutdown /s /t 0". To restart use /r instead of /s.
+
+C programming code for Ubuntu Linux
+#include <stdio.h>
+
+int main() {
+system("shutdown -P now");
+return 0;
+} 
+You need to be logged in as root user for above program to execute otherwise you will get the message shutdown: Need to be root, now specifies that you want to shutdown immediately. '-P' option specifies you want to power off your machine. You can specify minutes as:
+shutdown -P "number of minutes"
+For more help or options type at terminal: man shutdown.
+*/

@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{	
+int a,b,c,d;
+for (a=1; a<=10; a++)
+{	
+printf("$");
+}
+
+for (b=2; b<=5; b++)
+{
+printf("\n$$\t$$");
+}
+printf("\n");
+for (c=4; c<=8; c++)
+{
+printf("$$");
+}
+
+getch();
+}

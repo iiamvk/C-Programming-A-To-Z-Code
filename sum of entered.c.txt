@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,sum,i,b,c,no;
+	
+	
+	clrscr();
+	printf("enter the any two no. to fined the sum");
+	scanf("%d%d",&no,&a);
+	for (int i=1; i<=1; i++)
+	{
+		sum=no+a+b;
+		printf("%d,",sum);
+	}
+	getch();
+}

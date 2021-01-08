@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{	
+int a;
+clrscr();
+for (a=1; a<=1; a++)
+{	
+printf("\n%d\n",a);
+for (a=0; a<=1; a++)
+{
+printf("%d\t",a);
+}
+printf("\n");
+
+for (a=1; a<=1; a++)
+{
+printf("%d\t",a);
+}
+
+for (a=0; a<=1; a++)
+{
+printf("%d\t",a);
+}
+printf("\n");
+
+for (a=0; a<=1; a++)
+{
+printf("%d\t",a);
+}
+
+for (a=0; a<=1; a++)
+{
+printf("%d\t",a);
+}
+
+}
+getch();
+}

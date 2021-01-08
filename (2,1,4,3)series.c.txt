@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a,b,e,o,i,n;
+	a=2;
+	b=1;
+	clrscr();
+	printf("enter the no. of form  to be printed series ");
+	scanf("%d",&n);
+	printf("\n each series \n ");
+	printf("%d \t %d,",a,b);
+	for (int i=0; i<=n; i++)
+	{
+		e=a+2;
+	   
+	   o=b+a;
+	   a=a+2;
+		printf("%d,",e);
+		printf("%d,",o);
+	}
+	getch();
+}

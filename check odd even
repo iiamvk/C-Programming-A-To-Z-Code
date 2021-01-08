@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{	
+int a;
+printf("enter the a");
+scanf("%d",&a);
+
+if (a%2==0)
+{
+printf(" even no.=%d",a);
+}
+else
+{
+printf("odd no. =%d",a);
+}
+getch();
+}

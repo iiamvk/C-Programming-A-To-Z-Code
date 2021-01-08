@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i=0,k=0;
+	clrscr();
+	
+	while (++i<=5) //outer while loop
+	{
+		while (++k<=5) //inner while loop
+		{
+			printf("%d\n",k);
+		
+		}
+		printf("%d\n",k);
+	}
+}

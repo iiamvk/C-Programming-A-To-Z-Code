@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,fact=1,no;
+	printf("enter a no. to check the factorial");
+	scanf("%d",&no);
+	
+	 for(i=1;no>=i;i++)
+	 {
+	 	fact=fact*i;
+	 }	
+	
+	printf("the factorial of entered no:%d is %d",no,fact);
+	 
+	getch();
+}

@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+#define LAMBDA 3
+void main ()
+{
+	int column;
+
+
+	printf("\n     "
+	       "\tInformation Table\n");
+	
+	printf("____________________________________________\n");
+	printf("\tNAME"
+	       "\t CONTACT "
+	       " \tADDRESS\n");		printf("____________________________________________\n");
+    printf("VINOD KUMAR"
+    "\t 8463809042"
+    "\tKHARORA\n");
+printf("____________________________________________\n");
+    printf("VINOD KUMAR"
+    "\t 8463809042"
+    "\tKHARORA\n");
+
+printf("____________________________________________\n");
+	
+	printf("VINOD KUMAR"
+    "\t 8463809042"
+    "\tKHARORA\n");
+printf("____________________________________________\n");
+
+getch();
+}
+	

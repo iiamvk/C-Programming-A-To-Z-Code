@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,k,a[10][10],r,c;
+	printf("enter the row");
+	scanf("%d",&r);
+		printf("enter the column");
+	scanf("%d",&r);
+	for (i=0; i<=r; i++)
+	{
+		for (k=0;k<=c;k++)
+   {
+   	scanf("%d",a[i][k]);
+	}
+	}
+	printf("print the array");
+	for(;;){
+	}

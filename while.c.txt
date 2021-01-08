@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int no1,no2;
+	clrscr();
+	
+	printf("enter two to check even no");
+	scanf("%d%d",&no1,&no2);
+	while (no1<=no2)
+	{
+		if (no1%2==0)
+	{
+		printf("even=%d\n",no1);
+	}
+		++no1;
+	}
+	getch();
+}

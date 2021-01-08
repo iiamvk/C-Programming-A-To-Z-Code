@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+#define COLMAX 10
+#define ROWMAX 10
+#define LAMBDA 3
+void main ()
+{
+	int row,col,y,t,r,R;
+	row=1;
+
+	printf("Multiplication Table\n");
+
+	printf("____________________________________________\n");
+
+	do 
+	{   col=1;
+		do
+		{
+			y=row*col;
+			printf("%4d",y);
+			col=col+1;
+		
+		}
+		while 
+		(col<=COLMAX);
+		printf("\n");
+		row=row+1;
+		printf("____________________________________________\n");
+	}
+	
+	while
+	(row<=ROWMAX);
+
+getch();
+}
+	

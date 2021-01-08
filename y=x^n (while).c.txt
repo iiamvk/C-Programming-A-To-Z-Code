@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int x,y=1,i=1,n;
+	
+	printf("enter the  no.");
+	scanf("%d%d",&n,&x);
+	
+	while (i<=n)
+	{
+	    y=y*x;
+		i++;
+	}
+	printf("%d,%d,%d",x,n,y);
+}

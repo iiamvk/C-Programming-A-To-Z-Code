@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i=1,sum=0,no;
+	
+	printf("enter no to find the sum of enter no.");
+	scanf("%d",&no);
+	
+	while (i<=no)
+	{
+		sum=sum+i;
+		i++;
+	}
+	printf("sum of enter no.=%d sum=%d",no,sum);
+}

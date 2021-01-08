@@ -1,0 +1,27 @@
+/* inter change two number without using third variable */
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int m,n;
+clrscr();
+printf("enter the first no.=");
+scanf("%d",&n);
+printf("enter the second no.=");
+scanf("%d",&m);
+printf("\n Before swapping m=%d and n=%d",m,n);
+if (n>m)
+{
+	m=m+n;
+	n=m-n;
+	m=m-n;
+}
+else
+{
+	n=m-n;
+     m=m-n;
+     n=m+n;
+}
+printf("\n after swapping m=%d and n=%d",m,n);
+getch();
+}

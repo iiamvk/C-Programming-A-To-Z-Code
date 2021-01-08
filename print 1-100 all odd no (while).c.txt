@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i=1;
+	clrscr();
+	printf(" 1-100 all odd no.\n");
+	while (i<=100) 
+	{
+		if (i%2==1)
+		{
+		printf("%d \n",i);
+		}
+		i++;
+	}
+}

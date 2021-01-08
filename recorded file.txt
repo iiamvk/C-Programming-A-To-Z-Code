@@ -1,0 +1,3 @@
+Name=gdf
+Age=57
+Salary=78

@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	char ch='a';
+	
+	clrscr();
+	
+	printf("print alphabate a-z");
+	
+	while (ch<='z') 
+	{
+		
+		printf("%c \n",ch++);
+	}
+}

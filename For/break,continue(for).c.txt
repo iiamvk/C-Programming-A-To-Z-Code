@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int i;
+	clrscr();
+	for(i=1;i<=10;i++)
+	{
+		if(i==4)
+	{
+		continue;
+	}
+		if(i==6)
+	{
+		break;
+	}
+		printf("\t%d",i);
+	}
+getch();
+}

@@ -1,0 +1,166 @@
+
+/*Print Pattern
+These program prints various different patterns of numbers and stars. These codes illustrate how to create various patterns using c programming. Most of these c programs involve usage of nested loops and space. A pattern of numbers, star or characters is a way of arranging these in some logical manner or they may form a sequence. Some of these patterns are triangles which have special importance in mathematics. Some patterns are symmetrical while other are not. Please see the complete page and look at comments for many different patterns.
+
+*
+***
+*****
+*******
+*********
+We have shown five rows above, in the program you will be asked to enter the numbers of rows you want to print in the pyramid of stars.
+*/
+//C programming code
+#include <stdio.h>
+
+int main()
+{
+int row, c, n, temp;
+
+printf("Enter the number of rows in pyramid of stars you wish to see ");
+scanf("%d",&n);
+
+temp = n;
+
+for ( row = 1 ; row <= n ; row++ )
+{
+for ( c = 1 ; c < temp ; c++ )
+printf(" ");
+
+temp--;
+
+for ( c = 1 ; c <= 2*row - 1 ; c++ )
+printf("*");
+
+printf("\n");
+}
+
+return 0;
+}
+/*Download Stars pyramid program.
+
+Output of program:
+stars pyramid program
+
+For more patterns or shapes on numbers and characters see comments below and also see codes on following pages:
+Floyd triangle
+Pascal triangle*/
+
+/*Consider the pattern
+*
+**
+***
+****
+*****
+
+to print above pattern see the code below:*/
+
+#include <stdio.h>
+
+int main()
+{
+int n, c, k;
+
+printf("Enter number of rows\n");
+scanf("%d",&n);
+
+for ( c = 1 ; c <= n ; c++ )
+{
+for( k = 1 ; k <= c ; k++ )
+printf("*");
+
+printf("\n");
+}
+
+return 0;
+}
+/*Using these examples you are in a better position to create your desired pattern for yourself. Creating a pattern involves how to use nested loops properly, some pattern may involve alphabets or other special characters. Key aspect is knowing how the characters in pattern changes.
+
+C pattern programs
+Pattern:
+
+
+*
+*A*
+*A*A*
+*A*A*A*
+C pattern program of stars and alphabets:*/
+
+#include<stdio.h>
+
+main()
+{
+int n, c, k, space, count = 1;
+
+printf("Enter number of rows\n");
+scanf("%d",&n);
+
+space = n;
+
+for ( c = 1 ; c <= n ; c++)
+{
+for( k = 1 ; k < space ; k++)
+printf(" ");
+
+for ( k = 1 ; k <= c ; k++)
+{
+printf("*");
+
+if ( c > 1 && count < c)
+{
+printf("A"); 
+count++; 
+} 
+} 
+
+printf("\n");
+space--;
+count = 1;
+}
+return 0;
+}
+/*Pattern:
+
+1
+232
+34543
+4567654
+567898765
+C program:
+*/
+#include<stdio.h>
+
+main()
+{
+int n, c, d, num = 1, space;
+
+scanf("%d",&n);
+
+space = n - 1;
+
+for ( d = 1 ; d <= n ; d++ )
+{
+num = d;
+
+for ( c = 1 ; c <= space ; c++ )
+printf(" ");
+
+space--;
+
+for ( c = 1 ; c <= d ; c++ )
+{
+printf("%d", num);
+num++;
+}
+num--;
+num--;
+for ( c = 1 ; c < d ; c++)
+{
+printf("%d", num);
+num--;
+}
+printf("\n");
+
+}
+
+return 0;
+}

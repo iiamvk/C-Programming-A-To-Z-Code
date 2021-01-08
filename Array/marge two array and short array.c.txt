@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int arr1[5]={2,1,7,5,3};
+	int arr2[5]={15,11,12,16,14},
+    arr3[10],i,k,k=0,temp;
+	
+	for(i=0;i<10;i++)
+	{
+		arr3[i]=arr1[i];
+		if (4<i)
+		{
+			arr3[i]=arr2[k];
+			k++;
+		}		
+	}
+	printf("marge elements are\n");
+	for(i=0;i<10;i++)
+	{
+	printf("\t%d\n",arr3[i]);
+	}
+	for(i=0;i<10-1;i++)
+	{
+		for(k=i+1;k<10;k++)
+		{
+			if(arr3[k]<arr3[i])
+			{
+				temp=arr3[k];
+				arr3[k]=arr3[i];
+				arr3[i]=temp;
+			}
+     	}
+	}
+	printf("shorted elements are:\n");
+	for(i=0;i<10;i++)
+	{
+		printf("\t%d\n",arr3[i]);
+	}
+	getch();
+}
+	

@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i=1,fact=1,no;
+	
+	printf("enter no to find the factorial");
+	scanf("%d",&no);
+	
+	while (i<=no)
+	{
+		fact=fact*i;
+		i++;
+	}
+	printf("factorial of enter no.=%d factorial=%d",no,fact);
+}

@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[3][4],i,k,total=0;
+	printf("enter any 12 no.");
+	for(i=0;i<3;i++)
+	{
+		for(k=0;k<4;k++)
+		{
+			scanf("%d",&a[i][k]);
+	    }
+	}
+	printf("values are:\n ");
+	for(i=0;i<3;i++)
+	{
+		for(k=0;k<4;k++)
+		{
+	
+		printf("\t%d",a[i][k]);
+		total=total+a[i][k];
+		}
+		printf("\ttotal=%d",total);
+	
+	total=0;
+	printf("\n");
+	}
+getch();
+}

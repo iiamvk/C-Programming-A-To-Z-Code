@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int n,x;
+	float y;
+	clrscr();
+	printf(" enter the value of x and n=");
+	scanf("%d%d",&x,&n);
+	if (x>0)
+	{
+	y=1+x;
+	printf("the value of y=%f",y);
+
+	y=1+x/n;
+	printf("the value of y2=%f",y);
+	
+	y=1+x^n;
+	printf("the value of y3=%f",y);
+	
+	y=1+x*x;
+	printf("the value of y4=%f",y);
+	}
+	else 
+       {
+      	printf("y5==%f",y);
+	   }	
+	getch();
+}

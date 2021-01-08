@@ -1,0 +1,9 @@
+/*
+KEYWORD AND THERE STRING
+
+1.integer(int)=%d
+2.character(char)=%c
+3.double(double)=%lf
+4.float(float)=%f
+5.string(string)=%s
+*/

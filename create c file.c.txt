@@ -1,0 +1,30 @@
+/* c_program to create a file and store_a
+informatio.*/
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+	FILE *fptr;
+	char name[20];
+	int age;
+	int salary;
+	clrscr();
+	/* open for writing*/
+	fptr=fopen("recorded file.txt","w");
+	if (fptr==NULL)
+	{
+		printf("File does not exists\n");
+		return;
+	}
+	printf("enter the name\n");
+	gets(name);
+	fprintf(fptr, "Name=%s\n",name);
+	printf("enter the age\n");
+	scanf("%d",&age);
+	fprintf(fptr,"Age=%d\n",age);
+	printf("enter the salary\n");
+	scanf("%d",&salary);
+	fprintf(fptr, "Salary=%d\n",salary);
+	fclose(fptr);
+	getch();
+}

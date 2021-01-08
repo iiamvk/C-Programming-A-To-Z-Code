@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int i,k,no;
+	clrscr();
+	printf("enter no. to print pattern");
+	scanf("%d",&no);
+	for(i=no;i>=1;i--)
+	{
+		printf("%d",i);
+		for(k=1;k<=i;k++)
+	{
+		printf("*");
+	}
+		printf("\n");
+	}
+getch();
+}

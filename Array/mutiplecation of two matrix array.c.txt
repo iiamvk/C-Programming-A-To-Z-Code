@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a[5],b[5],c[5],i;
+	printf("enter any five no.in first matrix");
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("enter again any five no. in second matrix ");
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&b[i]);
+	}
+	for(i=0;i<5;i++)
+	{
+		c[i]=a[i]*b[i];
+	}	
+	printf("Addition Of Two Matrix");
+	for(i=0;i<5;i++)
+	{
+		printf("\t\n%d",c[i]);
+	}
+	getch();
+}
+	

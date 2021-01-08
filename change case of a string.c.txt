@@ -1,0 +1,126 @@
+
+/*C program to change case of a string
+Strlwr function convert a string to lower case and strupr function convert a string to upper case.Here we will change string case with and without strlwr, strupr functions. These functions convert case of alphabets and ignore other characters which may be present in a string.
+
+strlwr in c*/
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+char string[1000];
+
+printf("Input a string to convert to lower case\n");
+gets(string);
+
+printf("Input string in lower case: \"%s\"\n",strlwr(string));
+
+return 0;
+}
+//strupr in c
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+char string[1000];
+
+printf("Input a string to convert to upper case\n");
+gets(string);
+
+printf("Input string in upper case: \"%s\"\n",strupr(string));
+
+return 0;
+}
+//Change string to upper case without strupr
+#include <stdio.h>
+
+void upper_string(char []);
+
+int main()
+{
+char string[100];
+
+printf("Enter a string to convert it into upper case\n");
+gets(string);
+
+upper_string(string);
+
+printf("Entered string in upper case is \"%s\"\n", string);
+
+return 0;
+}
+/*
+void upper_string(char s[]) {
+int c = 0;
+
+while (s[c] != '\0') {
+if (s[c] >= 'a' && s[c] <= 'z') {
+s[c] = s[c] - 32;
+}
+c++;
+}
+}
+//Change string to lower case without strlwr
+#include <stdio.h>
+
+void lower_string(char []);
+
+int main()
+{
+char string[100];
+
+printf("Enter a string to convert it into lower case\n");
+gets(string);
+
+lower_string(string);
+
+printf("Entered string in lower case is \"%s\"\n", string);
+
+return 0;
+}
+
+void lower_string(char s[]) {
+int c = 0;
+
+while (s[c] != '\0') {
+if (s[c] >= 'A' && s[c] <= 'Z') {
+s[c] = s[c] + 32;
+}
+c++;
+}
+}
+/*You can also implement functions using pointers.
+
+C program to change case from upper to lower and lower to upper
+Below program change case of alphabets if a lower case alphabet is found it is converted to upper and if an upper case is found it is converted to lower case.*/
+
+#include <stdio.h>
+
+int main () 
+{
+int c = 0;
+char ch, s[1000];
+
+printf("Input a string\n");
+gets(s);
+
+while (s[c] != '\0') {
+ch = s[c];
+if (ch >= 'A' && ch <= 'Z')
+s[c] = s[c] + 32;
+else if (ch >= 'a' && ch <= 'z')
+s[c] = s[c] - 32; 
+c++; 
+}
+
+printf("%s\n", s);
+
+return 0;
+}
+/*Output of program:
+
+Input a string
+abcdefghijklmnopqrstuvwxyz{0123456789}ABCDEFGHIJKLMNOPQRSTUVWXYZ
+ABCDEFGHIJKLMNOPQRSTUVWXYZ{0123456789}abcdefghijklmnopqrstuvwxyz
+*/

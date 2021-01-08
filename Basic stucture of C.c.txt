@@ -1,0 +1,41 @@
+// Basic structure of C program
+/* (documentation section)
+author:vinod kumar
+Date:08/09/2017
+Time:11:07AM
+*/
+
+//(link section)
+#include<stdio.h>
+//standerd input output header file
+#include<conio.h>
+//console input output header file
+
+//(defination sectio)
+#define MAX 50
+#define MIN 50
+#define PI 3.14
+
+/*(global declaration section)=global use 
+of function and main function */
+
+//main function
+main()
+{
+/*	Body of C progrom there two pert
+ 1. declaration part 
+ex:- int a;
+float 3.2;
+
+2. Executation part
+ex:- printf("execute");
+scanf("etc"); 
+*/
+}
+
+/*sub program fuction:-
+function1---
+functio2-----
+-----
+-----------
+*/

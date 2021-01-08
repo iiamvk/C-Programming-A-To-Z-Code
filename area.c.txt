@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int r,l,h,b,character;
+	char T,R,C;
+	float A;
+	printf("enter the area of triangle press T");
+    	printf("\n enter the area of circle press C ");
+	printf("\n enter the area of rectangle press R");
+	character=getchar();
+	switch (character)
+	{
+		case 'T':
+		printf("enter the base and height of triangle=");
+		scanf("%d%d",&b,&h);
+		A=(b*h)/2;
+		printf("area of triangle=%f",A);
+		break;
+		case 'C':
+		printf("enter the radius of circle=");
+		scanf("%d",&r);
+		A=3.14*r*r;
+		printf("area of circle=%f",A);    
+		break;
+		case 'R':
+		printf("enter the length and height of rectangle");
+		scanf("%d%d",&l,&h);
+		A=l*h;
+		printf("area of rectangle=%f",A);
+	     break;
+	}
+	getch();
+}

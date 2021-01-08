@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int m;
+	printf("enter the marks = ");
+	scanf("\n %d",&m);
+	if (m>=80&&m<=100)
+	{ printf("BE honours");}
+  else if (m>=60&&m<=79)
+	{ printf("BE I div");}
+ else  if (m>=50&&m<=59)
+	{ printf("BE II div "); }
+	else if (m>=40&&m<=49)
+	{ printf("BE III div ");}
+   else { printf("fail");}
+	getch();
+}

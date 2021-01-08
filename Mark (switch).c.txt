@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int m,index;
+	printf("enter the marks = ");
+	scanf(" %d",&m);
+	index=m/10;
+	switch (index)
+	{
+		case 10:
+		printf("BE honours");
+		break;
+		case 9:
+		printf("BE honours");
+		break;
+		case 8:
+		printf("BE honours");
+		break;
+		case 7:
+		printf("BE I div");
+		break;
+		case 6:
+		printf("BE I div");
+		break;
+		case 5:
+		printf("BE II div ");
+		break;
+		case 4:
+		printf("BE III div");
+		break;
+		default:
+		printf("fail");
+	}
+	getch();
+}
